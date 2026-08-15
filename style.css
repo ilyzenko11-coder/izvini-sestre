@@ -1,8 +1,5 @@
-@import "tailwindcss";
-
 :root {
   --cream: #fff8f5;
-  --rose: #d94b68;
   --rose-dark: #9e2f4b;
   --ink: #432c32;
 }
@@ -27,7 +24,7 @@ button { font: inherit; }
   padding: 44px 20px 72px;
   isolation: isolate;
   background:
-    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.98) 0 16%, transparent 48%),
+    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, .98) 0 16%, transparent 48%),
     linear-gradient(145deg, #fffaf7 0%, #fde9eb 48%, #f9d9df 100%);
 }
 
@@ -35,7 +32,7 @@ button { font: inherit; }
   position: absolute;
   inset: 18px;
   z-index: -1;
-  border: 1px solid rgba(170, 78, 99, 0.18);
+  border: 1px solid rgba(170, 78, 99, .18);
   border-radius: 26px;
   content: "";
 }
@@ -47,7 +44,7 @@ button { font: inherit; }
   aspect-ratio: 1;
   border-radius: 50%;
   filter: blur(70px);
-  opacity: 0.34;
+  opacity: .34;
 }
 
 .glow-one { top: -12vw; left: -10vw; background: #ffd2a8; }
@@ -57,12 +54,12 @@ button { font: inherit; }
   width: min(680px, 100%);
   padding: clamp(44px, 7vw, 80px) clamp(28px, 8vw, 84px);
   text-align: center;
-  background: rgba(255, 253, 251, 0.78);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 253, 251, .78);
+  border: 1px solid rgba(255, 255, 255, .8);
   border-radius: 40px;
-  box-shadow: 0 30px 80px rgba(129, 47, 67, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.96);
+  box-shadow: 0 30px 80px rgba(129, 47, 67, .16), inset 0 1px 0 rgba(255, 255, 255, .96);
   backdrop-filter: blur(15px);
-  animation: card-arrival 0.9s 0.12s both cubic-bezier(0.22, 1, 0.36, 1);
+  animation: card-arrival .9s .12s both cubic-bezier(.22, 1, .36, 1);
 }
 
 .mini-heart {
@@ -74,7 +71,7 @@ button { font: inherit; }
   color: white;
   background: linear-gradient(145deg, #ef718a, #c73c5b);
   border-radius: 50%;
-  box-shadow: 0 12px 26px rgba(195, 53, 84, 0.28);
+  box-shadow: 0 12px 26px rgba(195, 53, 84, .28);
   font-size: 25px;
   animation: soft-pulse 2.4s 1.2s infinite ease-in-out;
 }
@@ -84,7 +81,7 @@ button { font: inherit; }
   color: #a55a6c;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.24em;
+  letter-spacing: .24em;
   text-transform: uppercase;
 }
 
@@ -94,9 +91,9 @@ h1 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(72px, 15vw, 142px);
   font-weight: 400;
-  letter-spacing: -0.065em;
-  line-height: 0.96;
-  text-shadow: 0 8px 28px rgba(175, 53, 80, 0.11);
+  letter-spacing: -.065em;
+  line-height: .96;
+  text-shadow: 0 8px 28px rgba(175, 53, 80, .11);
 }
 
 .message {
@@ -117,11 +114,11 @@ h1 {
   color: #a46877;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: .14em;
   text-transform: uppercase;
 }
 
-.signature-line { width: 42px; height: 1px; background: rgba(164, 104, 119, 0.45); }
+.signature-line { width: 42px; height: 1px; background: rgba(164, 104, 119, .45); }
 
 .heart-button {
   display: inline-flex;
@@ -134,23 +131,22 @@ h1 {
   background: linear-gradient(135deg, #df5d78, #bb3555);
   border: 0;
   border-radius: 999px;
-  box-shadow: 0 12px 28px rgba(177, 45, 75, 0.24);
+  box-shadow: 0 12px 28px rgba(177, 45, 75, .24);
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.02em;
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.heart-button:hover { box-shadow: 0 16px 34px rgba(177, 45, 75, 0.31); transform: translateY(-2px); }
-.heart-button:active { transform: translateY(1px) scale(0.98); }
-.heart-button:focus-visible { outline: 3px solid rgba(187, 53, 85, 0.28); outline-offset: 4px; }
+.heart-button:hover { box-shadow: 0 16px 34px rgba(177, 45, 75, .31); transform: translateY(-2px); }
+.heart-button:active { transform: translateY(1px) scale(.98); }
+.heart-button:focus-visible { outline: 3px solid rgba(187, 53, 85, .28); outline-offset: 4px; }
 
 .footer-note {
   position: absolute;
   bottom: 31px;
   margin: 0;
-  color: rgba(89, 54, 63, 0.58);
+  color: rgba(89, 54, 63, .58);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 13px;
   font-style: italic;
@@ -167,22 +163,22 @@ h1 {
   font-size: var(--size);
   line-height: 1;
   opacity: 0;
-  filter: drop-shadow(0 6px 8px rgba(148, 38, 64, 0.18));
-  animation: heart-flight var(--duration) var(--delay) both cubic-bezier(0.2, 0.65, 0.3, 1);
+  filter: drop-shadow(0 6px 8px rgba(148, 38, 64, .18));
+  animation: heart-flight var(--duration) var(--delay) both cubic-bezier(.2, .65, .3, 1);
 }
 
 .flying-heart:nth-child(3n) { color: #ef8ca0; }
 .flying-heart:nth-child(4n) { color: #c43c5b; }
 
 @keyframes heart-flight {
-  0% { opacity: 0; transform: translate3d(0, 30px, 0) rotate(0deg) scale(0.45); }
-  12% { opacity: 0.95; }
-  78% { opacity: 0.82; }
+  0% { opacity: 0; transform: translate3d(0, 30px, 0) rotate(0deg) scale(.45); }
+  12% { opacity: .95; }
+  78% { opacity: .82; }
   100% { opacity: 0; transform: translate3d(var(--drift), -112vh, 0) rotate(var(--spin)) scale(1.1); }
 }
 
 @keyframes card-arrival {
-  from { opacity: 0; transform: translateY(18px) scale(0.98); }
+  from { opacity: 0; transform: translateY(18px) scale(.98); }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
@@ -200,5 +196,5 @@ h1 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .apology-card, .mini-heart, .flying-heart { animation-duration: 0.01ms; animation-iteration-count: 1; }
+  .apology-card, .mini-heart, .flying-heart { animation-duration: .01ms; animation-iteration-count: 1; }
 }
